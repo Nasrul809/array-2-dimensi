@@ -15,16 +15,16 @@ public class main2 {
             }
             System.out.println("");
         }
-        System.out.println("\nArray Baris ke0-1 : ");
+        System.out.println("\nArray Baris ke-1 : ");
         for(int a=0; a < data[0].length; a++){
             if (a % 2 != 0){
-                System.out.print(data[0][1]);
+                System.out.print(data[0][a]);
                 if( a == (data[0].length - 1)){
-                    System.out.print("=");
+                    System.out.print(" = ");
                 }else{
-                    System.out.print("+");
+                    System.out.print(" + ");
                 }
-                total1 += data[2][1];
+                total1 += data[0][a];
                 }
         }
             System.out.println(total1);
@@ -33,7 +33,7 @@ public class main2 {
         for (int b = 0; b < data[1].length; b++){
             if (b % 2 != 0){
                 System.out.print(data[1][b]);
-                if ( b == (data[0].length -1)){
+                if ( b == (data[0].length - 1)){
                     System.out.print(" = ");
                 } else {
                     System.out.print(" + ");
